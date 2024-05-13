@@ -1,117 +1,113 @@
-<!DOCTYPE html>
+<doctype html!>
 <html>
 <head>
-    <title>Movie Website</title>
-</head>
+<title>home</title>
   <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+    ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
     body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: black;
+}
+    div.gallery {
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  width: 20%;
+  padding: 80px
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+div.gallery:hover {
+  border: 1px solid #777;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+div.gallery img {
+  width: 100%;
+  height: auto;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+div.desc {
+  padding: 10px;
+  color: white;
+  text-align: center;
 }
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-/* Styles for featured movie */
-.featured {
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.featured article {
-    text-align: center;
-}
-
-.featured img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Styles for latest movies section */
-.movies-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.movies-list .movie-card {
-    width: calc(33.33% - 20px);
-    margin-bottom: 20px;
-    background-color: #f4f4f4;
-    padding: 10px;
-}
-
-.movies-list .movie-card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-    /style>
+ </style>
+   <ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">Tv Shows</a></li>
+  <li><a href="contact.asp">Movies</a></li>
+  <li><a href="about.asp">Games and Apps</a></li>
+  <li><a href="about.asp">Collections</a></li></ul>
+  <li style="float:right"><a class="active" href="#about">search</a></li>
+</ul>
+</head>
 <body>
-    <header>
-        <h1>Movie Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="featured">
-            <h2>Featured Movie</h2>
-            <article>
-                <img src="images-2.jpeg" alt="Movie Poster">
-                <h3>Movie Title</h3>
-                <p>Description of the movie.</p>
-                <a href="#">Read More</a>
-            </article>
-        </section>
-
-        <section class="latest-movies">
-            <h2>Latest Movies</h2>
-            <div class="movies-list">
-                <!-- Movie cards dynamically generated using JavaScript -->
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Movie Website. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+    <img src="images.jpeg" alt="Cinque Terre" width="600" height="600">
+  </a>
+  <div class="desc">CK</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="images-2.jpeg" alt="Forest" width="600" height="600">
+  </a>
+  <div class="desc">night swim</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="images-3.jpeg" alt="Northern Lights" width="600" height="600">
+  </a>
+  <div class="desc">inside out 2</div>
+</div>
+  <h2>Recommed for you</h2>
+  <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="images-4.jpeg" alt="Cinque Terre" width="600" height="600">
+  </a>
+  <div class="desc">The Beekeeper</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="images-5.jpeg" alt="Forest" width="600" height="600">
+  </a>
+  <div class="desc">Civil War</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="images-6.jpeg" alt="Northern Lights" width="600" height="600">
+  </a>
+  <div class="desc">Monkey Man</div>
+  </div>  
 </body>
 </html>

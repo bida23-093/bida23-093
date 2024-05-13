@@ -11,10 +11,10 @@ ul {
   background-color: #333;
 }
     ul {
-  position: fixed;
+  position: justify-content-center;
   top: 0;
   width: 100%;
-}
+      }
 li {
   float: left;
 }

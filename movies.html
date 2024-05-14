@@ -159,8 +159,8 @@ footer {
     </header>
  <h2 class="w3-center">WELCOME TO WARNER BROS</h2>
 
-<div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="image-10.jpeg" style="width:100%">
+<div class="w3-content w3-section" style="max-width:100%; margin: 0 auto;">
+ <img class="mySlides" src="image-10.jpeg" style="width:100%">
   <img class="mySlides" src="images-4.jpeg" style="width:100%">
   <img class="mySlides" src="images-5.jpeg" style="width:100%">
 </div>
@@ -181,28 +181,6 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
- <div class="w3-content w3-section" style="max-width:500px">
-  <div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="bottoms.webp" style="width:100%">
-  <img class="mySlides" src="barbie.jpeg" style="width:100%">
-  <img class="mySlides" src="sea beast.jpeg" style="width:100%">
-  </div>
-</div>
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
 </script>
  <section class="hero">
         <h1>Welcome to Warner Bros</h1>

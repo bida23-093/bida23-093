@@ -1,1 +1,300 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+  /* Reset default browser styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black
+}
 
+/* Header styles */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+     color: #fff;
+}
+  li a:hover {
+  background-color: #111;
+}
+  
+.search-form {
+    display: flex;
+    margin-left: 1150px;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #900;
+}
+  /* Hero section styles */
+.hero {
+    background-image: url('get out2.jpeg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #900;
+}
+
+/* Featured section styles */
+.featured {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.movie-posters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-poster {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.movie-poster img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.movie-poster img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+ </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+   <li><a href="Home.html">Home</a></li>
+  <li><a href="Tv shows.html">Tv Shows</a></li>
+  <li><a href="movies.html">Movies</a></li>
+  <li><a href="Games and apps.html">Games and Apps</a></li>
+               <li><a href="collections.html">Collections</a></li></ul>
+          <li><a href="registration.html">Feedback</a></li></ul>           
+        </ul>
+            <form class="search-form" id="searchForm" action="#" method="GET">
+                <input type="text" id="searchInput" placeholder="Search movies...">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+  <section class="hero">
+        <h1>Movies</h1>
+        </section>
+ <section class="featured">
+        <h2>WARNER BROS COLLECTIONS</h2>
+        <div class="movie-posters">
+            <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="get out2.jpeg" alt="Movie 1 Poster">
+            </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="sea beast.jpeg" alt="Movie 2 Poster">
+            </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="barbie.jpeg" alt="Movie 3 Poster">
+            </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="moonlight-11.jpg" alt="Movie 4 Poster">        
+            </div>
+        <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="aw 6.jpeg" alt="Movie 4 Poster">         
+         </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="bs 2.jpeg" alt="Movie 4 Poster">         
+        </div>
+ </section>
+ <section class="featured">
+      <div class="movie-posters">
+            <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="mn 1.jpeg" alt="Movie 1 Poster">
+            </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="mn 2.jpeg" alt="Movie 2 Poster">
+            </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="mn 3.jpeg" alt="Movie 3 Poster">
+            </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="mn 5.jpeg" alt="Movie 4 Poster">         
+        </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="car.jpg" alt="Movie 1 Poster">
+            </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="us-12.jpg" alt="Movie 1 Poster">
+            </div>
+ </section>
+ <section class="featured">
+        <div class="movie-posters">
+            <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="shrek.png" alt="Movie 1 Poster">
+            </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="sea beast.jpeg" alt="Movie 2 Poster">
+            </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="barbie.jpeg" alt="Movie 3 Poster">
+            </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="kids 1.jpeg" alt="Movie 4 Poster">         
+        </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="kids 2.jpeg" alt="Movie 1 Poster">
+            </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="kids 3.jpeg" alt="Movie 1 Poster">
+            </div>
+ </section>
+ <section class="featured">
+        <div class="movie-posters">
+            <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="kids 4.jpeg" alt="Movie 1 Poster">
+            </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="kids 5.jpeg" alt="Movie 2 Poster">
+            </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="comedy 1.jpeg" alt="Movie 3 Poster">
+            </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="comedy 2.jpeg" alt="Movie 4 Poster">         
+        </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="comedy 3.jpeg" alt="Movie 1 Poster">
+            </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="comedy 4.jpeg" alt="Movie 1 Poster">
+            </div>
+ </section>
+ <section class="featured">
+        <div class="movie-posters">
+            <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="horror 1.jpeg" alt="Movie 1 Poster">
+            </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="horror 2.jpeg alt="Movie 2 Poster">
+            </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="horror 3.jpeg" alt="Movie 3 Poster">
+            </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="horror 4.jpeg" alt="Movie 4 Poster">         
+        </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="horror 5.jpeg" alt="Movie 1 Poster">
+            </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="horror 6.jpeg" alt="Movie 1 Poster">
+            </div>
+ </section>
+ <section class="featured">
+        <div class="movie-posters">
+            <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="aw 1.jpeg" alt="Movie 1 Poster">
+            </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="aw 2.jpep" alt="Movie 2 Poster">
+            </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="aw 3.jpeg" alt="Movie 3 Poster">
+            </div>
+            <div class="movie-poster" data-title="DUNE: PART TWO" data-description="Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he must prevent a terrible future only he can foresee.">
+                <img src="aw 3.jpeg" alt="Movie 4 Poster">         
+        </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="aw 4.jpeg" alt="Movie 1 Poster">
+            </div>
+         <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">
+                <img src="aw 5.jpeg" alt="Movie 1 Poster">
+            </div>
+ </section>
+ <footer>
+ <h3>TM & © 2024 Warner Bros. Entertainment Inc. All rights reserved.</h3>
+</footer>    
+<script src="script.js"></script>
+ </body>
+</html>

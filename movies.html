@@ -58,32 +58,32 @@ nav ul li a {
 .search-form button:hover {
     background-color: #900;
 }
+   .video-background {
+           position: relative;
+           overflow: hidden;
+           width: 100%;
+           height: 100vh;
+       }
 
-/* Hero section styles */
-  .hero {
-    background-video: url('B40BDAC4-2CC7-48AE-A86E-71170E19070B.mov');
-    background-size: cover;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-}
+       #bg-video {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           min-width: 100%;
+           min-height: 100%;
+           width: auto;
+           height: auto;
+           z-index: -1;
+       }
 
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.hero p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: white;
-}
-
+       .content {
+           position: relative;
+           z-index: 1;
+           color: white; /* Or any color that contrasts with the video */
+           text-align: center;
+           padding: 20px;
+       }
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -162,10 +162,11 @@ footer {
             </form>
         </nav>
     </header>
-  <section class="hero">
-        <h1>Movies</h1>
-    </section>
-<section class="featured">
+  <div class="video-background">
+       <video autoplay loop id="bg-video">
+           <source src="fast.mp4.mov type="video/mp4">
+       </video>
+   <section class="featured">
         <h2>BEST SELLING MOVIES</h2>
         <div class="movie-posters">
             <div class="movie-poster" data-title="GODZILLA X KONG: THE NEW EMPIRE" data-description="The epic battle continues! Legendary Pictures’ cinematic Monsterverse follows up the explosive showdown of “Godzilla vs. Kong” with an all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence—and our own. “Godzilla x Kong: The New Empire” delves further into the histories of these Titans and their origins, as well as the mysteries of Skull Island and beyond, while uncovering the mythic battle that helped forge these extraordinary beings and tied them to humankind forever.">

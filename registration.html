@@ -41,7 +41,32 @@ li a {
 li a:hover {
   background-color: #111;
 }
-    form {
+    .search-form {
+    display: flex;
+    margin-left: 1150px;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #900;
+}
+  
+  form {
       max-width: 400px;
       margin: 120px auto;
       padding: 30px;
@@ -49,6 +74,7 @@ li a:hover {
       border-radius: 5px;
       background: black
     }
+   
     body, html {
     margin: 0;
     padding: 0;
